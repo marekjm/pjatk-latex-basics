@@ -11,3 +11,7 @@
 *.snm
 *.toc
 *.vrb
+*.bbl
+*.blg
+*.lof
+*.lol

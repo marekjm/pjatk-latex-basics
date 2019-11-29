@@ -1,0 +1,125 @@
+\documentclass[11pt,twoside,a4paper,titlepage,onecolumn]{book}
+% Można też zrobić "twocolumn", ale dziwnie to wygląda.
+
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[official]{eurosym}
+\usepackage[polish]{babel}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[inline]{enumitem}
+\usepackage{geometry}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\renewcommand*{\lstlistlistingname}{Spis listingów}
+
+\author{Przemysław Rzykładowy\\John Doe\\Promotor: dr hab. X. Y. Zeciński, prof. PJATK}
+\title{
+    Przykładowy tytuł\\
+    \large
+    Przykładowy podtytuł
+}
+
+\lstset{basicstyle=\ttfamily\color{black},
+columns=fixed,
+escapeinside={\%*}{*)},
+inputencoding=utf8,
+extendedchars=true,
+moredelim=**[is][\color{red}]{@}{@}}
+
+\begin{document}
+
+\begin{titlepage}                                                                                        
+	\includegraphics[width=\textwidth]{pjwstk_logo}
+	\begin{center}
+		{\huge\texttt{Polsko-Japońska Akademia Technik Komputerowych}}
+		{\huge\texttt{Zamiejscowy Wydział Informatyki w Gdańsku}}
+	\end{center}
+	\vspace{1cm}
+	{\Large\textbf{Imię i nazwisko dyplomanta:} Przemysław Rzykładowy}
+	\vspace{0.5cm}
+	\newline
+	{\Large\textbf{Nr albumu:} s12345}
+	\vspace{0.5cm}
+	\newline
+	{\Large\textbf{Kierunek studiów:}
+	Informatyka \hfill \textbf{Rodzaj studiów:} niestacjonarne}
+
+	\vspace{1.5cm}
+	\begin{center}
+	{\huge\textsc{Praca dyplomowa}}
+	\end{center}
+	\vspace{1cm}
+
+	~
+	\newline
+	{\Large
+	\textbf{Temat pracy:} Przykładowy tytuł\\
+	\phantom{\textbf{Temat pracy:}} Dalsza część przykładowego tytułu}
+	\vspace{1cm}
+	\newline
+	{\Large\textbf{Temat w języku angielskim:} Example title\\
+	\phantom{\textbf{Temat w języku angielskim:}} Example title extended}
+	\vspace{1cm}
+	\newline
+	{\Large\textbf{Opiekun pracy:} dr hab. X. Y. Zeciński, prof. PJATK}
+	\vspace{0.5cm}
+	\newline
+	{\Large\textbf{Wykonawcy:} Przemysław Rzykładowy i John Doe}
+	\vspace{1.5cm}
+	\newline
+	{\Large\textbf{Streszczenie:} Bla bla bla.}
+	\vspace*{\fill}
+	\begin{center}
+	Gdańsk, 2019 rok
+	\end{center}
+\end{titlepage}
+
+\frontmatter
+\tableofcontents
+\listoffigures
+\lstlistoflistings
+\vspace*{\fill}
+Praca została złożona za pomocą systemu \LaTeX.
+
+\newpage
+
+\mainmatter
+
+\part{Pierwsza część}
+
+\input{pierwszy_rozdzial}
+
+\part{Część druga}
+
+\input{jeszcze_jeden_rozdzial}
+
+\input{kolejny_rozdzial}
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio}
+
+\part{Załączniki}
+
+\appendix
+
+\chapter{Załącznik pierwszy}
+
+W dodatkach można normalnie stosować rozdziały, sekcje, itd.
+
+\chapter{Załącznik drugi}
+
+Tutaj jakoś przykładowy kod:
+
+\begin{lstlisting}[caption={Przykładowy listing},captionpos=b]
+	std::cout << "Hello, World!\n";
+\end{lstlisting}
+
+\end{document}

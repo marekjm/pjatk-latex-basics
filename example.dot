@@ -1,0 +1,6 @@
+digraph {
+    rankdir="LR";
+
+    A -> B;
+    B -> C [style=dashed];
+}

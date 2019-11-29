@@ -1,0 +1,63 @@
+%
+% Tutaj wstaw:
+%
+%   \documentclass{FOO}
+%
+% gdzie FOO to wybarana klasa dokumentu. Jakie są dostępne typy dokumentów?
+% Lista tutaj: https://en.wikibooks.org/wiki/LaTeX/Document_Structure
+%
+
+% Zakładam, że jesteśmy rozsądnymi ludźmi i kodujemy nasze pliki tekstowe
+% używając UTF-8. Trzeba o tym poinformować LaTeX, bo inaczej nie poradzi sobie
+% ze znakami typu ą, ę, ź i innymi "dziwnymi".
+\usepackage[utf8]{inputenc}
+
+% Udostępnia dodatkowe znaki (m.in. symbol waluty Euro). Najlepiej dołączyć i
+% się nie przejmować.
+\usepackage{textcomp}
+\usepackage[official]{eurosym}
+
+% Zasady tego jak powienien być układany tekst pisany po polsku.
+\usepackage[polish]{babel}
+
+% Do definicji i dowodów. Zazwyczaj sie nie przydaje, ale czasem warto mieć to
+% pod ręką.
+\usepackage{amsthm}
+
+% Jak sama nazwa wskazuje, do tego żeby wstawiać obrazki.
+\usepackage{graphicx}
+
+% TeX jest stary i mógłby być zrobiony lepiej. Ten fontenc T1 jest potrzebny
+% żeby czcionki i znaki zachowywały się tak jak oczekujemy tego w XXI wieku.
+\usepackage[T1]{fontenc}
+
+% Trochę dodatkowych rzeczy (?). Lepiej dodać.
+\usepackage{scrextend}
+
+% Do tworzenia linków i odniesień.
+\usepackage{hyperref}
+
+% Kolory.
+\usepackage{xcolor}
+
+% Potrzebne żeby móc dostosowywać marginesy, odstępy, itp. Może się przydać.
+\usepackage{geometry}
+
+% Żeby listingi (fragmenty kodu źródłowego) wyglądały znośnie.
+\usepackage{listings}
+
+%
+% Tutaj ustaw:
+%
+%   \title{...}
+%   \subtitle{...}
+%   \author{...}
+%
+
+\begin{document}
+
+%
+% Tutaj wstaw treść.
+%
+
+\end{document}

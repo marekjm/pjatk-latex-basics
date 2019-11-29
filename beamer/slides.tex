@@ -1,0 +1,75 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[official]{eurosym}
+\usepackage[polish]{babel}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{listings}
+
+\usetheme{-bjeldbak/beamerthemebjeldbak}
+
+\title{Przykładowy tytuł}
+\subtitle{Przykładowy podtytuł}
+\author{Przemysław Rzykładowy}
+\institute{Polsko-Japońska Akademia Technik Komputerowych}
+
+\lstset{basicstyle=\ttfamily\color{black},
+columns=fixed,
+escapeinside={\%*}{*)},
+inputencoding=utf8,
+extendedchars=true,
+moredelim=**[is][\color{red}]{@}{@}}
+
+\begin{document}
+
+{%
+    \setbeamertemplate{headline}{}
+    \frame{\titlepage}
+}
+
+\section{Wstęp}
+
+\begin{frame}
+    \frametitle{Przykładowy tytuł slajdu}
+    \framesubtitle{Przykładowy podtytuł slajdu}
+
+    Przykładowy tekst.
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Slajdy z kodem}
+    \framesubtitle{Muszą być oznaczone przez \texttt{fragile}}
+
+    \begin{lstlisting}
+    std::cout << "Hello, World!\\n";
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Jeszcze jeden}
+
+    Slajd.
+\end{frame}
+
+\section{Rozwinięcie}
+
+\begin{frame}
+    \frametitle{Jak na polskim w podstawówce}
+
+    Też był wstęp, rozwinięcie i zakończenie.
+\end{frame}
+
+\section{Zakończenie}
+
+\begin{frame}
+    Końcowy slajd.
+\end{frame}
+
+\end{document}

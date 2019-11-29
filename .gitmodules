@@ -1,0 +1,3 @@
+[submodule "beamer/beamertheme-bjeldbak"]
+	path = beamer/beamertheme-bjeldbak
+	url = https://github.com/martinbjeldbak/beamertheme-bjeldbak
